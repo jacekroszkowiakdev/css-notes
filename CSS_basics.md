@@ -272,3 +272,5 @@ The final color applied to the paragraph will be yellow, as the #unique.highligh
 
 -   If two selectors have the same specificity, the one that appears last in the CSS will take precedence.
 -   !important can override any specificity rules, but should be used sparingly to avoid difficulties in maintaining the CSS.
+
+![CSS and Specificity Order](./img/CSS_Specificity.png)
