@@ -80,23 +80,23 @@ This will apply the style to links when they are hovered over.
 
 Selects and styles a part of an element. For example, it can be used to:
 
-    Style the first letter, or line, of an element
-    Insert content before, or after, the content of an element
+-   Style the first letter, or line, of an element
+-   Insert content before, or after, the content of an element
 
-    Note: The ::first-line pseudo-element can only be applied to block-level elements.
+**Note**: The ::first-line pseudo-element can only be applied to block-level elements.
 
 The following properties apply to the ::first-line pseudo-element:
 
-    font properties
-    color properties
-    background properties
-    word-spacing
-    letter-spacing
-    text-decoration
-    vertical-align
-    text-transform
-    line-height
-    clear
+-   font properties
+-   color properties
+-   background properties
+-   word-spacing
+-   letter-spacing
+-   text-decoration
+-   vertical-align
+-   text-transform
+-   line-height
+-   clear
 
 ```css
 p::first-line {
