@@ -116,7 +116,9 @@ div p {
 }
 ```
 
-This will apply the style to all `<p>` elements inside `<div>` elements.
+This will apply the style to all `<p>` elements inside `<div>` elements. Bellow the illustration showing how the Descendant Selector applies the style:
+
+![CSS Descendant Selector](./img/CSS_combinators_descendant.png)
 
 #### Child Selector
 
@@ -128,7 +130,9 @@ ul > li {
 }
 ```
 
-This will apply the style to all `<li>` elements that are direct children of `<ul>` elements.
+This will apply the style to all `<li>` elements that are direct children of `<ul>` elements. Bellow the illustration showing how the Child Selector applies the style:
+
+![CSS Descendant Selector](./img/CSS_combinators_child.png)
 
 #### Adjacent Sibling Selector
 
@@ -140,7 +144,9 @@ h1 + p {
 }
 ```
 
-This will apply the style to the <p> element that immediately follows an `<h1>` element.
+This will apply the style to the <p> element that immediately follows an `<h1>` element. Illustration below explains how the Adjacent Selector applies the style:
+
+![CSS Descendant Selector](./img/CSS_combinators_adjacent_sibling.png)
 
 #### General Sibling Selector
 
@@ -152,7 +158,9 @@ h1 ~ p {
 }
 ```
 
-This will apply the style to all `<p>` elements that are siblings of an `<h1>` element.
+This will apply the style to all `<p>` elements that are siblings of an `<h1>` element. Illustration below explains how the General Selector applies the style:
+
+![CSS Descendant Selector](./img/CSS_combinators_general_sibling.png)
 
 #### Compound selector
 

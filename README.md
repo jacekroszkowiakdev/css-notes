@@ -23,6 +23,6 @@ We welcome contributions from the community. If you have any notes, examples, or
 
 ## Contact
 
-If you have any questions or suggestions, please open an issue or contact us at [jacekroszkowiakdev@example.com].
+If you have any questions or suggestions, please open an issue or contact me at [jacekroszkowiakdev@gmail.com].
 
 Happy styling!
