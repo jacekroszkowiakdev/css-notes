@@ -282,3 +282,130 @@ The final color applied to the paragraph will be yellow, as the #unique.highligh
 -   !important can override any specificity rules, but should be used sparingly to avoid difficulties in maintaining the CSS.
 
 ![CSS and Specificity Order](./img/CSS_Specificity.png)
+
+### 4. Inheritance
+
+CSS inheritance is a fundamental concept that influences how styles are applied to elements within a document. Understanding which properties are inherited and how inheritance works helps in writing more efficient and predictable stylesheets.
+What is CSS Inheritance?
+
+Inheritance in CSS means that certain properties set on a parent element are passed down to its child elements. This behavior reduces the need for repetitive styling and ensures consistency across a webpage.
+Inherited vs. Non-Inherited Properties
+
+**Inherited Properties**:
+Some CSS properties are inherited by default. These typically include properties related to text and layout. For example:
+
+-   color
+-   font-family
+-   font-size
+-   font-weight
+-   font-style
+-   line-height
+-   text-align
+-   text-indent
+-   text-transform
+-   visibility
+-   cursor
+-   list-style
+-   letter-spacing
+-   word-spacing
+-   white-space
+
+**Non-Inherited Properties**:
+Most other CSS properties are not inherited by default. These include properties that define the box model, layout, and other aspects of the element. For example:
+
+-   margin
+-   padding
+-   border
+-   width
+-   height
+-   background
+-   display
+-   position
+-   float
+-   clear
+-   overflow
+-   visibility
+-   z-index
+
+Controlling Inheritance
+
+You can explicitly control inheritance using the `inherit`, `initial`, `unset`, and `revert` values.
+
+Using `inherit`:
+To force an element to inherit a property from its parent, you can use the inherit value.
+
+```css
+
+.child {
+color: inherit; /_ Inherits color from parent _/
+}
+```
+
+Using `initial`:
+To reset a property to its default value, use the initial value.
+
+```css
+
+.child {
+color: initial; /_ Resets color to the initial value _/
+}
+```
+
+Using `unset`:
+The unset keyword acts as inherit if the property is naturally inherited and as initial if it is not.
+
+```css
+
+.child {
+color: unset; /_ Inherits if naturally inherited, otherwise sets to initial _/
+}
+```
+
+Using `revert`:
+The revert keyword resets the property to the value established by the user agent stylesheet or other relevant stylesheets.
+
+```css
+
+.child {
+color: revert; /_ Resets to the value defined by the user agent stylesheet _/
+}
+```
+
+**Example**: Consider the following HTML and CSS:
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+            .container {
+                font-size: 16px;
+            }
+            .child {
+                font-style: italic;
+            }
+            .override {
+                color: blue;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <p class="child">This is an inherited paragraph.</p>
+            <p class="child override">This is an overridden paragraph.</p>
+        </div>
+    </body>
+</html>
+```
+
+Explanation:
+
+-   The body element sets the font-family and color, which are inherited by all child elements unless explicitly overridden.
+-   The .container class sets the font-size to 16px, inherited by the paragraphs inside it.
+-   The .child class sets font-style to italic, inherited by the text in the paragraphs.
+-   The .override class sets the color to blue and font-size to 14px, overriding the inherited values from .container.
