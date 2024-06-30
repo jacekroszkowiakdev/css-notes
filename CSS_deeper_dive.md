@@ -308,13 +308,17 @@ In some cases, you might want to apply box-sizing to specific elements only.
 
 It specifies the type of rendering box used for an element and can influence how an element interacts with other elements on the page.
 
-Common **display** Values
+Common `**display**` Values
 
 1. **block**:
 
 -   The element is rendered as a block-level element.
 -   Takes up the full width available, with line breaks before and after.
 -   Examples: `<div>`,` <p>`,` <h1>`.
+
+**Padding in Block Elements**:
+
+Block elements respect all sides of padding: top, right, bottom, and left. The padding expands the element’s box and affects the overall layout of the page. Here's an example:
 
 ```css
 .block {
@@ -326,7 +330,11 @@ Common **display** Values
 
 -   The element is rendered as an inline element.
 -   Takes up only as much width as necessary, no line breaks before or after.
--   Examples: <span>, <a>, <strong>.
+-   Examples: `<span>`, `<a>`, `<strong>`.
+
+**Padding in Inline Elements**:
+
+Inline elements, such as `<span>`,`<a>`, and `<strong>`, only respect horizontal padding (left and right). Vertical padding (top and bottom) is applied but does not affect the line height, meaning it doesn't create additional space above or below the text. Here's an example:
 
 ```css
 .inline {
@@ -338,7 +346,11 @@ Common **display** Values
 
 -   The element is rendered as an inline-level block container.
 -   Flows with inline content but allows setting width and height.
--   Examples: Custom buttons, badges.
+-   Examples: `Custom buttons`, `badges`.
+
+**Padding in Inline-Block Elements**:
+
+With display: inline-block, padding on all sides (top, right, bottom, left) is respected and contributes to the element's overall size. This makes inline-block elements versatile for layout design because they can be styled and sized like block elements while flowing inline with other elements.
 
 ```css
 .inline-block {
@@ -349,8 +361,12 @@ Common **display** Values
 4. **flex**::
 
 -   The element becomes a flex container.
--   Enables flexbox layout model for flexible and responsive layouts.
+-   Enables `**flexbox layout model**` for flexible and responsive layouts.
 -   Examples: Navigation bars, card layouts.
+
+**Padding in Flex Containers**:
+
+When you apply padding to a flex container, it affects the inner space of the container, creating space between the container's border and its content (flex items). This padding is respected on all sides (top, right, bottom, left).
 
 ```css
 .flex {
@@ -362,6 +378,10 @@ Common **display** Values
 
 -   The element behaves like an inline-level flex container.
 -   Combines features of flex and inline.
+
+**Padding in inline-flex**:
+
+    Top and Bottom Padding: Affects the height of the inline-flex element, but it doesn't change the line height for the text or affect the height of the surrounding inline content. Left and Right Padding: Affects the width of the inline-flex element and contributes to the spacing between inline elements.
 
 ```css
 .inline-flex {
