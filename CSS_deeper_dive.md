@@ -308,9 +308,9 @@ In some cases, you might want to apply box-sizing to specific elements only.
 
 It specifies the type of rendering box used for an element and can influence how an element interacts with other elements on the page.
 
-Common `**display**` Values
+Common `display` Values
 
-1. **block**:
+1. <code>block</code>:
 
 -   The element is rendered as a block-level element.
 -   Takes up the full width available, with line breaks before and after.
@@ -326,7 +326,7 @@ Block elements respect all sides of padding: top, right, bottom, and left. The p
 }
 ```
 
-2. **inline**:
+2. <code>inline</code>:
 
 -   The element is rendered as an inline element.
 -   Takes up only as much width as necessary, no line breaks before or after.
@@ -342,11 +342,11 @@ Inline elements, such as `<span>`,`<a>`, and `<strong>`, only respect horizontal
 }
 ```
 
-3. **inline-block**:
+3. <code>inline-block</code>>:
 
 -   The element is rendered as an inline-level block container.
 -   Flows with inline content but allows setting width and height.
--   Examples: `Custom buttons`, `badges`.
+-   Examples: `custom buttons`, `badges`.
 
 **Padding in Inline-Block Elements**:
 
@@ -358,10 +358,10 @@ With display: inline-block, padding on all sides (top, right, bottom, left) is r
 }
 ```
 
-4. **flex**::
+4. <code>flex</code>:
 
 -   The element becomes a flex container.
--   Enables `**flexbox layout model**` for flexible and responsive layouts.
+-   Enables `flexbox layout model` for flexible and responsive layouts.
 -   Examples: Navigation bars, card layouts.
 
 **Padding in Flex Containers**:
@@ -374,7 +374,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-5. **inline-flex**:
+5. <code>inline-flex</code>
 
 -   The element behaves like an inline-level flex container.
 -   Combines features of flex and inline.
@@ -389,7 +389,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-6. **grid**:
+6. <code>grid</code>:
 
 -   The element becomes a grid container.
 -   Enables grid layout model for complex, two-dimensional layouts.
@@ -400,7 +400,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-7. **inline-grid**:
+7. <code>inline-grid</code>:
 
 -   The element behaves like an inline-level grid container.
 
@@ -410,7 +410,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-8. **none**:
+8. <code>none</code>:
 
 -   The element is not displayed at all (no rendering box).
 -   Does not take up any space in the layout.
@@ -423,7 +423,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 
 **Other Values and Concepts**
 
-    **table**:
+<code>table</code>:
 
 -   The element behaves like a <table>.
 
@@ -433,7 +433,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-**table-row, table-cell, etc**.:
+<code>table-row, table-cell, etc</code>.:
 
 -   Elements behave like rows and cells of a table.
 
@@ -446,7 +446,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-**contents**:
+<code>contents</code>:
 
 -   The element disappears, but its child elements remain and are rendered as if they were direct children of the parent element.
 
@@ -456,7 +456,7 @@ When you apply padding to a flex container, it affects the inner space of the co
 }
 ```
 
-**list-item**:
+<code>list-item</code>:
 
 -   The element behaves like a list item.
 
