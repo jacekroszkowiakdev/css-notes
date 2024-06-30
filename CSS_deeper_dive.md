@@ -314,7 +314,7 @@ Common **display** Values
 
 -   The element is rendered as a block-level element.
 -   Takes up the full width available, with line breaks before and after.
--   Examples: <div>, <p>, <h1>.
+-   Examples: `<div>`,` <p>`,` <h1>`.
 
 ```css
 .block {
